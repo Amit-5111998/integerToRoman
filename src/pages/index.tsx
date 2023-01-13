@@ -3,13 +3,18 @@ import { intToRoman } from "../utils/functions";
 import { useState } from "react";
 
 export default function Home() {
-    
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   const [romanNumeral, setRomanNumeral] = useState("");
+
+  /*function to call the converter function 
+   ~@param(data) number to ne converted 
+  */
   const handleConvertPressed = (data: FieldValues) => {
     setRomanNumeral(intToRoman(data.number));
   };
