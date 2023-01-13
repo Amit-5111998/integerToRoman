@@ -16,5 +16,8 @@
    2. TypeScript 
    3. React   
 
+## purpose of the APPlication 
+  this app is used for converting integer(number) into Roman Number
+
 
    
